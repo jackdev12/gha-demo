@@ -4,7 +4,18 @@ jobs:
   action-demo:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
       - name: checkout the code
         uses: actions/checkout@v4
       - name: print index.html file
         run: cat index.html
+=======
+      - name: Build Step
+        run: echo "Hello, ${{vars.My_NAME}}"
+
+      - name: checkout the code
+        uses: actions/checkout@v4
+      - name: print index.html file
+        run: cat index.html
+
+>>>>>>> c1594ce (actions demo)
