@@ -11,7 +11,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: perform code quality
-              run: echo "Performing code quality checks on code"
+              run: |
+                echo "Performing code quality checks on code"
+                exit 1
     dev_deploy:
         if: github.ref_name == 'develop' && github.event_name == 'push'
         runs-on: ubuntu-latest
