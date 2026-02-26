@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: checkout the code
         uses: actions/checkout@v4
-      - name: print index.html file
+      - name: printing index.html file
         run: cat index.html
       - name: Build Step
         run: echo "Hello, ${{vars.My_NAME}}"
